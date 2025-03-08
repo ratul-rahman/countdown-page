@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .countdown-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .countdown-title {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    background: linear-gradient(to right, #60a5fa, #a855f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .countdown-timer {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .countdown-box {
+    background-color: rgba(31, 41, 55, 0.8);
+    border: 1px solid #4b5563;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .countdown-value {
+    font-size: 4rem;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .countdown-label {
+    color: #9ca3af;
+    font-size: 1.125rem;
+  }
+  
+  .subtext {
+    color: #9ca3af;
+    font-size: 1.25rem;
+  }
+  
+  .highlight {
+    color: white;
+    font-weight: 700;
+  }
+  
+  @media (max-width: 768px) {
+    .countdown-title {
+      font-size: 2.5rem;
+    }
+    
+    .countdown-value {
+      font-size: 2rem;
+    }
+    
+    .countdown-box {
+      padding: 1rem;
+    }
+    
+    .countdown-timer {
+      gap: 0.75rem;
+    }
+  }
